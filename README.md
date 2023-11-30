@@ -1,1 +1,22 @@
 # LeastSquares_Banknotes
+
+I chose to use the Banknote Dataset as a classification example to detirmine whether banknotes were real or counterfiet. Raw data is included as the data_banknote_classification.txt file, downloaded from https://machinelearningmastery.com/standard-machine-learning-datasets/ . The dataset included:
+
+Varience of the wavelet transformed image
+Skewness of wavelet transformed image
+Kurtosis of wavelet transformed image
+Entropy of the image
+Class, 0 for authentic and 1 for inauthentic
+
+To make the data easier for me to work with, removed the 0/1 class indicator and used a dictionary key/pair to keep track of class information.
+
+I implemented the function definitions for the performance metrics in table 14.1 and page 287 in Introdution to Applied Linear Algebra. This included error rate, true positive, false positive, true nagative and precision. I calculated performance metrics based on classification of authentic and the inauthentic notes. It is worth noting that values were not the same for some of the metrics using the authentic and inauthentic notes. For example, error rate was 2.33% for both but the other values are as follows:
+
+True Positive; 100%: authentic, 95.80%: inauthentic
+False Positive; 4.20%: authentic, 0%: inauthentic
+True Negative; 95.80%: authentic, 100% inauthentic
+Precision; 95.01%: authentic, 100% inauthentic
+
+When y_hat calculated with authentic notes and y_hat calculated with inauthentic notes are plotted, one can see that there is much variation in the second half of the data, which are the inauthentic notes. This may account for the variation in metrics values above.
+
+After a single classifier is created, it has the same error rate  of 2.33 %.
