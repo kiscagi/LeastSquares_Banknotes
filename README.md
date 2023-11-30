@@ -13,8 +13,11 @@ To make the data easier for me to work with, removed the 0/1 class indicator and
 I implemented the function definitions for the performance metrics in table 14.1 and page 287 in Introdution to Applied Linear Algebra. This included error rate, true positive, false positive, true nagative and precision. I calculated performance metrics based on classification of authentic and the inauthentic notes. It is worth noting that values were not the same for some of the metrics using the authentic and inauthentic notes. For example, error rate was 2.33% for both but the other values are as follows:
 
 True Positive; 100%: authentic, 95.80%: inauthentic
+
 False Positive; 4.20%: authentic, 0%: inauthentic
+
 True Negative; 95.80%: authentic, 100% inauthentic
+
 Precision; 95.01%: authentic, 100% inauthentic
 
 When y_hat calculated with authentic notes and y_hat calculated with inauthentic notes are plotted, one can see that there is much variation in the second half of the data, which are the inauthentic notes. This may account for the variation in metrics values above.
