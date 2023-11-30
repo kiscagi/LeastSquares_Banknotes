@@ -14,9 +14,12 @@ I implemented the function definitions for the performance metrics in table 14.1
 
 True Positive; 100%: authentic, 95.80%: inauthentic
 
+
 False Positive; 4.20%: authentic, 0%: inauthentic
 
+
 True Negative; 95.80%: authentic, 100% inauthentic
+
 
 Precision; 95.01%: authentic, 100% inauthentic
 
